@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/webGame-App/static/css/main.23ced37d.css",
+    "main.js": "/webGame-App/static/js/main.a2dd4f64.js",
+    "static/media/10th_BG.webp": "/webGame-App/static/media/10th_BG.45679eefc0f2367e6cf3.webp",
+    "static/media/11th_BG.webp": "/webGame-App/static/media/11th_BG.ef9aa4a1b8c173d06f7b.webp",
+    "static/media/1st_img.webp": "/webGame-App/static/media/1st_img.3a6f657f5d45f8c1d66a.webp",
+    "static/media/homeBG.webp": "/webGame-App/static/media/homeBG.222c1613d32fcd1584cc.webp",
+    "static/media/5th_img.webp": "/webGame-App/static/media/5th_img.bb6beb4871de3c492f50.webp",
+    "static/media/2nd_img.webp": "/webGame-App/static/media/2nd_img.49b0fa91f7c947cae42d.webp",
+    "static/media/12th_img.webp": "/webGame-App/static/media/12th_img.a793a4442da556433a22.webp",
+    "static/media/3rd_img.jpg": "/webGame-App/static/media/3rd_img.5370d1ad7126e85b8fd2.jpg",
+    "static/media/9th_img.webp": "/webGame-App/static/media/9th_img.b24095638dccc54ed1d2.webp",
+    "static/media/13th_img.webp": "/webGame-App/static/media/13th_img.09eb86ca5cea49a69ea8.webp",
+    "static/media/4th_img.webp": "/webGame-App/static/media/4th_img.67e38415f87a98a72dbf.webp",
+    "static/media/GooglePlay.webp": "/webGame-App/static/media/GooglePlay.1dd5e9bcaaf80d65ff1f.webp",
+    "static/media/AppleStore.webp": "/webGame-App/static/media/AppleStore.8547e08b12e10d86875f.webp",
+    "static/media/8th_img.webp": "/webGame-App/static/media/8th_img.ab714b6d010dfeb6e6b3.webp",
+    "static/media/7th_img.webp": "/webGame-App/static/media/7th_img.308ede5e2bce6cea54e0.webp",
+    "static/media/6th_img.webp": "/webGame-App/static/media/6th_img.a87fd8e31d845b362fdc.webp",
+    "index.html": "/webGame-App/index.html",
+    "main.23ced37d.css.map": "/webGame-App/static/css/main.23ced37d.css.map",
+    "main.a2dd4f64.js.map": "/webGame-App/static/js/main.a2dd4f64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23ced37d.css",
+    "static/js/main.a2dd4f64.js"
+  ]
+}
