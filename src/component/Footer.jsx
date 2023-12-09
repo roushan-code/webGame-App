@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className='n1 n1n'>
                     <div >
                         <nav className='nav1 navfoot'>
-                        <Link to="/">Tripo Games</Link>
+                            <Link to="/">Tripo Games</Link>
                         </nav>
                     </div>
                 </div>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <p className='paragraph'>An Immersive Gaming Experience</p>
                 </div>
                 <div className="footmain">
-                    
+
                     <div className="footmain1">
                         <div className="box4">
                             <h3 className="redP">Contact</h3>

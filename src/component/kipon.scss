@@ -1,0 +1,331 @@
+.fakebox {
+    width: 100%;
+    height: 250px;
+}
+
+.Kbox1 {
+    width: 100%;
+    height: 700px;
+    background-color: aquamarine;
+    background: url(./image/KiponBG.webp) no-repeat 50% 100% fixed;
+
+}
+
+.kboxi {
+    width: 672px;
+    height: auto;
+    position: absolute;
+    top: 110px;
+    left: 102px;
+}
+
+.ksec1 {
+    margin: 23px 37px 0px 37px;
+}
+
+.ksec3 {
+    margin: 23px 37px 0px 37px;
+}
+
+.kh1 {
+    font-size: 51px;
+    color: rgb(39, 36, 67);
+}
+
+.Kbox2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.ksub-box2 {
+    width: 86%;
+}
+
+.kh2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    margin: 35px 0px;
+    color: rgb(39, 36, 67);
+}
+
+.ksec4 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 47px
+}
+
+.k-img1 {
+    max-width: 41vw;
+    height: 23vw;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.2);
+
+    >img {
+        width: 41vw;
+        border-radius: 20px;
+        transition: all 1s ease;
+    }
+}
+
+.k-img1>img:hover {
+    scale: 1.1;
+}
+
+// .k-img2{
+//     max-width: 41vw;
+//     height: 23vw;
+//     border-radius: 20px;
+//     overflow: hidden;
+//     box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.2);
+//     >img{
+//         width: 41vw;
+//         border-radius: 20px;
+//         transition: all 1s ease;
+//     }
+// }
+// .k-img1>img:hover{
+//     scale: 1.1;
+// }
+
+.ksec5 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+
+    >h1 {
+        margin-left: 50px;
+    }
+}
+
+.star-box1 {
+    width: 254px;
+    height: 102px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-box2 {
+    width: 72%;
+    height: 40px;
+    background-color: rgb(218, 57, 43);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+    >svg {
+        width: 20px;
+        height: 20px;
+        margin: 0px 7px 0px 15px;
+        color: white;
+    }
+}
+
+.star-box3 {
+    width: 75%;
+    height: 34px;
+    background-color: white;
+    color: rgb(39, 36, 67);
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+
+    >div {
+        >p {
+            font-size: 16px;
+        }
+    }
+}
+
+.ksec6 {
+    width: 100%;
+    display: flex;
+}
+
+.write-box1 {
+    padding: 5vw 0px;
+    width: 57vw;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    >p {
+        width: 70%;
+        font-size: 17px;
+    }
+
+    >h3 {
+        width: 70%;
+        margin-top: 30px;
+    }
+}
+
+.wb1 {
+    border-left: none;
+    border-right: none;
+}
+
+.kbh3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: rgb(39, 36, 67);
+}
+
+
+.Kbox5 {
+    width: 100%;
+    height: 700px;
+    margin-top: 80px;
+    // border: 1px solid blue;
+    background: url(./image/kipon3.webp) no-repeat 50% 100% fixed;
+    background-blend-mode: color-burn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Kbox5::before {
+    content: '';
+    width: 100%;
+    height: 700px;
+    background-color: rgba(218, 57, 43, 0.7);
+    position: absolute;
+    z-index: 0;
+}
+
+.kb5-content {
+    max-width: 800px;
+    position: absolute;
+}
+
+.kh1-b5 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
+
+.kp-b5 {
+    margin: 0px 85px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0;
+}
+
+.Kbox6 {
+    display: flex;
+    justify-content: center;
+}
+
+.ksec7 {
+    min-width: 500px;
+    margin-top: 50px;
+    height: 200px;
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.play-img {
+    gap: 20px;
+}
+
+@media only screen and (max-width: 822px) {
+    .Kbox1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .kboxi {
+        width: 90vw;
+        left: auto;
+    }
+
+    .ksec4 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .k-img1 {
+        max-width: 80vw;
+        height: 45vw;
+
+        >img {
+            width: 80vw;
+        }
+    }
+
+    .ksec6 {
+        flex-direction: column;
+
+        >div:nth-child(1) {
+            border-bottom: none;
+        }
+
+        >div:nth-child(2) {
+            border: 1px solid;
+        }
+
+        >div:nth-child(3) {
+            border-top: none;
+        }
+    }
+
+    .write-box1 {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 588px) {
+    .ksec5 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .ksec7 {
+        min-width: 90vw;
+    }
+
+    .kp-b5 {
+        margin: 0px 10px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .ksec1{
+        margin: 23px 10px 0px 10px;
+    }
+    .ksec3{
+        margin: 23px 10px 0px 10px;
+    }
+    .ksec2{
+        margin: 23px 10px;
+    }
+    .kh1{
+        font-size: 11vw;
+    }
+    .kh1-b5{
+        font-size: 11vw;
+    }
+}

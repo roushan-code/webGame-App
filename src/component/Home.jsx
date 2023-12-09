@@ -1,7 +1,10 @@
 // import React,{useRef} from 'react'
-import React, {useState} from 'react'
+// import React, { useState } from 'react'
+import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import './Home.scss'
+import './Contact'
+
 import './HomeP.scss'
 import apple from './image/AppleStore.webp'
 import Google from './image/GooglePlay.webp'
@@ -15,6 +18,7 @@ import img7 from './image/7th_img.webp'
 import img8 from './image/8th_img.webp'
 import img9 from './image/9th_img.webp'
 import img11 from './image/11th_BG.webp'
+import Contact from './Contact';
 
 
 const Home = () => {
@@ -97,51 +101,51 @@ const Home = () => {
     threshold: 0.4
   });
 
-  const [inputValue, setInputValue] = useState('');
-  const [inputValue1, setInputValue1] = useState('');
-  const [inputValue2, setInputValue2] = useState('');
-  const [inputValue3, setInputValue3] = useState('');
-  const [inputValue4, setInputValue4] = useState('');
+  // const [inputValue, setInputValue] = useState('');
+  // const [inputValue1, setInputValue1] = useState('');
+  // const [inputValue2, setInputValue2] = useState('');
+  // const [inputValue3, setInputValue3] = useState('');
+  // const [inputValue4, setInputValue4] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Do something with the submitted data
-    console.log('Submitted:', inputValue);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Do something with the submitted data
+  //   console.log('Submitted:', inputValue);
 
-    // Reset the input field
-    setInputValue('');
-    setInputValue1('');
-    setInputValue2('');
-    setInputValue3('');
+  //   // Reset the input field
+  //   setInputValue('');
+  //   setInputValue1('');
+  //   setInputValue2('');
+  //   setInputValue3('');
 
-  };
-  const handleSubmit1 = (e) => {
-    e.preventDefault();
-    // Do something with the submitted data
-    console.log('Submitted:', inputValue);
+  // };
+  // const handleSubmit1 = (e) => {
+  //   e.preventDefault();
+  //   // Do something with the submitted data
+  //   console.log('Submitted:', inputValue);
 
-    // Reset the input field
-    setInputValue4('');
+  //   // Reset the input field
+  //   setInputValue4('');
 
-  };
+  // };
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
-  const handleInputChange1 = (e) => {
-    setInputValue1(e.target.value);
-  };
-  const handleInputChange2 = (e) => {
-    setInputValue2(e.target.value);
-  };
-  const handleInputChange3 = (e) => {
-    setInputValue3(e.target.value);
-  };
-  const handleInputChange4 = (e) => {
-    setInputValue4(e.target.value);
-  };
-  
-    
+  // const handleInputChange = (e) => {
+  //   setInputValue(e.target.value);
+  // };
+  // const handleInputChange1 = (e) => {
+  //   setInputValue1(e.target.value);
+  // };
+  // const handleInputChange2 = (e) => {
+  //   setInputValue2(e.target.value);
+  // };
+  // const handleInputChange3 = (e) => {
+  //   setInputValue3(e.target.value);
+  // };
+  // const handleInputChange4 = (e) => {
+  //   setInputValue4(e.target.value);
+  // };
+
+
   return (
     <>
 
@@ -192,22 +196,24 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      
 
       <section className='section3'>
         <div className='s3'>
-          <h3   className={` ${div1InView ? 'ff' : ''}`} ref={div1Ref}>About Tripo</h3>
+          <h3 className={` ${div1InView ? 'ff' : ''}`} ref={div1Ref}>About Tripo</h3>
           {/* <h1 ref={ref} className='head  ff'>{inView ? "yes": "no"}Your Source for Mobile Entertainment</h1> */}
-          <h1   className={`head ${div2InView ? 'ff' : ''}`} ref={div2Ref}>Your Source for Mobile Entertainment</h1>
-          <p   className={`paragraph ${div3InView ? 'ff' : ''}`} ref={div3Ref}>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+          <h1 className={`head ${div2InView ? 'ff' : ''}`} ref={div2Ref}>Your Source for Mobile Entertainment</h1>
+          <p className={`paragraph ${div3InView ? 'ff' : ''}`} ref={div3Ref}>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
           <button className={` ${div3InView ? 'ff' : ''}`} ref={div3Ref} >Learn More</button>
-          <div  className='Im1'>
+          <div className='Im1'>
             <img src={img4} className={` ${div4InView ? 'fadeInUp' : ''}`} ref={div4Ref} alt="" />
             <div className="red">
             </div>
-            <img src={img5} alt=""    className={`${div5InView ? 'ff' : ''}`} ref={div5Ref}/>
+            <img src={img5} alt="" className={`${div5InView ? 'ff' : ''}`} ref={div5Ref} />
           </div>
-          <h1   className={`head ${div6InView ? 'ff' : ''}`} ref={div6Ref}>Our Games</h1>
-          <p   className={`paragraph ${div7InView ? 'ff' : ''}`} ref={div7Ref}>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+          <h1 className={`head ${div6InView ? 'ff' : ''}`} ref={div6Ref}>Our Games</h1>
+          <p className={`paragraph ${div7InView ? 'ff' : ''}`} ref={div7Ref}>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
         </div>
       </section>
 
@@ -290,42 +296,43 @@ const Home = () => {
       <section className='section5'>
         <div className="fixedbg1">
           <div className="r0 r1">
-            <h3   className={`redP Mar ${div8InView ? 'ff' : ''}`} ref={div8Ref}> Join Our Team</h3>
-            <h1   className={`head Mar ${div9InView ? 'ff' : ''}`} ref={div9Ref}>It takes the world's best talent to change the game.</h1>
-            <button   className={`Mar ${div0InView ? 'ff' : ''}`} ref={div0Ref}>Explore Careers</button>
+            <h3 className={`redP Mar ${div8InView ? 'ff' : ''}`} ref={div8Ref}> Join Our Team</h3>
+            <h1 className={`head Mar ${div9InView ? 'ff' : ''}`} ref={div9Ref}>It takes the world's best talent to change the game.</h1>
+            <button className={`Mar ${div0InView ? 'ff' : ''}`} ref={div0Ref}>Explore Careers</button>
           </div>
           <div className="r1 r2">
             <img src={img11} className={` ${div14InView ? 'fadeInUpp' : ''}`} ref={div14Ref} alt="" />
           </div>
         </div>
         <div className="fixedbg2">
-          <div className="r3">
+          <Contact/>
+          {/* <div className="r3">
             <div className="formC formC0" id='Contact'>
               <h2>Get in Touch</h2>
               <p className="paragraph">I'm a paragraph. Click here to add your own text and edit me.</p>
               <form onSubmit={handleSubmit} >
-              <div className='namediv widthHeight'>
-                <div>
-                  <label className='paragraph' for="fname">First Name *</label> <br />
-                  <input type="text" name="Fname" onChange={handleInputChange} value={inputValue} id="fname" className='Input In1'/>
+                <div className='namediv widthHeight'>
+                  <div>
+                    <label className='paragraph' for="fname">First Name *</label> <br />
+                    <input type="text" name="Fname" onChange={handleInputChange} value={inputValue} id="fname" className='Input In1' />
+                  </div>
+                  <div>
+                    <label className='paragraph' for="lname">Last Name *</label> <br />
+                    <input type="text" name="Lname" onChange={handleInputChange1} value={inputValue1} id="lname" className='Input In1' />
+                  </div>
+
                 </div>
-                <div>
-                  <label className='paragraph' for="lname">Last Name *</label> <br />
-                  <input type="text" name="Lname" onChange={handleInputChange1} value={inputValue1} id="lname" className='Input In1'/>
+                <div className='mailDiv widthHeight'>
+                  <label className='paragraph' for="email">Email *</label> <br />
+                  <input type="email" name="Email" onChange={handleInputChange2} value={inputValue2} id="email" className='Input In2' />
                 </div>
 
-              </div>
-              <div className='mailDiv widthHeight'>
-                <label className='paragraph' for="email">Email *</label> <br />
-                <input type="email" name="Email" onChange={handleInputChange2} value={inputValue2} id="email" className='Input In2'/>
-              </div>
-
-              <div className='mailDiv widthHeight message'>
-                <label className='paragraph' for="comment">Leave us a message...</label> <br/>
+                <div className='mailDiv widthHeight message'>
+                  <label className='paragraph' for="comment">Leave us a message...</label> <br />
                   <textarea name="myText" onChange={handleInputChange3} value={inputValue3} id="comment" cols="30" rows="7"></textarea>
-              </div>
+                </div>
 
-              <button type="submit">Submit</button>
+                <button type="submit">Submit</button>
               </form>
             </div>
           </div>
@@ -334,15 +341,15 @@ const Home = () => {
               <h3 className='redP Mar r3h3'>Subscribe to Our Newsletter</h3>
               <form onSubmit={handleSubmit1}>
                 <div >
-              <div className='mailDiv widthHeight subsDiv'>
-                <label className='paragraph' for="email">Email *</label>
-                <input type="email" name="Email" onChange={handleInputChange4} value={inputValue4} id="email" className='Input subscribeInput In1' />
-              </div>
-                <button className='BBton' type="submit">Join</button>
-              </div>
+                  <div className='mailDiv widthHeight subsDiv'>
+                    <label className='paragraph' for="email">Email *</label>
+                    <input type="email" name="Email" onChange={handleInputChange4} value={inputValue4} id="email" className='Input subscribeInput In1' />
+                  </div>
+                  <button className='BBton' type="submit">Join</button>
+                </div>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

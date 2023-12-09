@@ -1,5 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    // box-sizing: border-box;
     // flex-wrap: wrap;
+}
+body{
+    background-color: rgb(242 242 242);
+}
+body::-webkit-scrollbar{
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(red,blue, green);
+    border-radius: 20px;
 }
