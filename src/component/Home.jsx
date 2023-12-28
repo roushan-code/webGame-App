@@ -2,6 +2,7 @@
 // import React, { useState } from 'react'
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom'
 import './Home.scss'
 import './Contact'
 
@@ -19,6 +20,10 @@ import img8 from './image/8th_img.webp'
 import img9 from './image/9th_img.webp'
 import img11 from './image/11th_BG.webp'
 import Contact from './Contact';
+
+const appLink ="https://www.apple.com/in/?afid=p238%7Csfo291LJq-dc_mtid_187079nc38483_pcrid_680861337497_pgrid_109516736059_pntwk_g_pchan__pexid__&cid=aos-IN-kwgo-brand--slid---product-"
+
+const GLink = 'https://play.google.com/store/games?device=windows&utm_source=apac_med&hl=en-IN&utm_medium=hasem&utm_content=Jun1223&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Jun1223-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700076783011871_creativeid_662052581180_device_c&gclid=Cj0KCQiAkKqsBhC3ARIsAEEjuJhkqNnZFUWaMljPH81yMMTCAHIsbdergeJL0UF8nJihszG1vAn-OSIaAsbaEALw_wcB&gclsrc=aw.ds&pli=1'
 
 
 const Home = () => {
@@ -145,6 +150,7 @@ const Home = () => {
   //   setInputValue4(e.target.value);
   // };
 
+  const top = ()=> window.screenTop();
 
   return (
     <>
@@ -154,8 +160,8 @@ const Home = () => {
           <h1 className='head'>Made to Be Played </h1>
           <p>The Very Best in Mobile Gaming</p>
           <div className='Img'>
-            <img className='AppGoogle' src={apple} alt="" />
-            <img className='AppGoogle' src={Google} alt="" />
+            <Link to={appLink} target="_blank"><img className='AppGoogle' src={apple} alt="" /></Link>
+            <Link to={GLink} target="_blank"><img className='AppGoogle' src={Google} alt="" /></Link>
           </div>
         </div>
       </section>
@@ -163,21 +169,24 @@ const Home = () => {
       <section className='section2'>
         <div className='secondSection'>
           <div>
-            <img id='IMG' src={img1} alt="" />
+            <Link to="/Kipon" onClick={top}><img id='IMG' src={img1} alt="" /></Link>
+            {/* <Link to="/Kipon" ><img id='IMG' src={img1} alt="" /></Link> */}
             <div className="imgRed">
               <p className='redP animationP'>Kipon</p>
               <p className='redP1 animationP'>Causal - Free</p>
             </div>
           </div>
           <div>
-            <img id='IMG' src={img2} alt="" />
+            <Link to="/Robotrix" onClick={top}><img id='IMG' src={img2} alt="" /></Link>
+            {/* <Link to="/Robotrix" ><img id='IMG' src={img2} alt="" /></Link> */}
             <div className="imgRed">
               <p className='redP animationP'>Robotrix</p>
               <p className='redP1 animationP'>RPG - Free</p>
             </div>
           </div>
           <div>
-            <img id='IMG' src={img3} alt="" />
+            <Link to="/Treasurebox" onClick={top}><img id='IMG' src={img3} alt="" /></Link>
+            {/* <Link to="/Treasurebox" ><img id='IMG' src={img3} alt="" /></Link> */}
             <div className="imgRed">
               <p className='redP animationP'>Treasure Box</p>
               <p className='redP1 animationP'>Adventure - Free</p>
@@ -185,6 +194,7 @@ const Home = () => {
           </div>
 
           <div>
+            <a href="/#ourGame">
             <div className='explore'>
               <p>Explore Our</p>
               <p>Games</p>
@@ -193,6 +203,7 @@ const Home = () => {
 
               </div>
             </div>
+            </a>
           </div>
         </div>
       </section>
@@ -205,14 +216,14 @@ const Home = () => {
           {/* <h1 ref={ref} className='head  ff'>{inView ? "yes": "no"}Your Source for Mobile Entertainment</h1> */}
           <h1 className={`head ${div2InView ? 'ff' : ''}`} ref={div2Ref}>Your Source for Mobile Entertainment</h1>
           <p className={`paragraph ${div3InView ? 'ff' : ''}`} ref={div3Ref}>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-          <button className={` ${div3InView ? 'ff' : ''}`} ref={div3Ref} >Learn More</button>
+          <a href="/"><button className={` ${div3InView ? 'ff' : ''}`} ref={div3Ref} >Learn More</button></a>
           <div className='Im1'>
             <img src={img4} className={` ${div4InView ? 'fadeInUp' : ''}`} ref={div4Ref} alt="" />
             <div className="red">
             </div>
             <img src={img5} alt="" className={`${div5InView ? 'ff' : ''}`} ref={div5Ref} />
           </div>
-          <h1 className={`head ${div6InView ? 'ff' : ''}`} ref={div6Ref}>Our Games</h1>
+          <h1 id="ourGame" className={`head ${div6InView ? 'ff' : ''}`} ref={div6Ref}>Our Games</h1>
           <p className={`paragraph ${div7InView ? 'ff' : ''}`} ref={div7Ref}>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
         </div>
       </section>
@@ -222,7 +233,8 @@ const Home = () => {
           <div className="box1">
 
             <div className={`boxi ${div10InView ? 'fadeInLeft' : ''}`} ref={div10Ref}>
-              <div className="sec1">
+              <Link to="/Kipon" onClick={top}><div className="sec1">
+              {/* <Link to="/Kipon" ><div className="sec1"> */}
                 <div className="photo">
                   <img src={img6} alt="" />
                 </div>
@@ -230,13 +242,13 @@ const Home = () => {
                   <p className='redP '>Kipon</p>
                   <p className='redP1 '>Causal - Free</p>
                 </div>
-              </div>
+              </div></Link>
               <div className="sec2">
                 <p className='paragraph'>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
               </div>
               <div className="sec3">
-                <img className='AppGoogle' src={apple} alt="" />
-                <img className='AppGoogle' src={Google} alt="" />
+                <Link to={appLink} target="_blank"><img className='AppGoogle' src={apple} alt="" /></Link>
+                <Link to={GLink} target="_blank"><img className='AppGoogle' src={Google} alt="" /></Link>
               </div>
             </div>
 
@@ -244,7 +256,8 @@ const Home = () => {
           <div className="box1">
 
             <div className={`boxi ${div11InView ? 'fadeInLeft' : ''}`} ref={div11Ref}>
-              <div className="sec1">
+              <Link to="/Robotrix" onClick={top}><div className="sec1">
+              {/* <Link to="/Robotrix" ><div className="sec1"> */}
                 <div className="photo">
                   <img src={img7} alt="" />
                 </div>
@@ -252,13 +265,13 @@ const Home = () => {
                   <p className='redP '>Robotrix</p>
                   <p className='redP1 '>RPG - Free</p>
                 </div>
-              </div>
+              </div></Link>
               <div className="sec2">
                 <p className='paragraph'>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
               </div>
               <div className="sec3">
-                <img className='AppGoogle' src={apple} alt="" />
-                <img className='AppGoogle' src={Google} alt="" />
+              <Link to={appLink} target="_blank"><img className='AppGoogle' src={apple} alt="" /></Link>
+                <Link to={GLink} target="_blank"><img className='AppGoogle' src={Google} alt="" /></Link>
               </div>
             </div>
 
@@ -268,6 +281,8 @@ const Home = () => {
           <div className="box1">
 
             <div className={`boxi ${div12InView ? 'fadeInLeft' : ''}`} ref={div12Ref}>
+              <Link to="/Treasurebox" onClick={top}>
+              {/* <Link to="/Treasurebox" > */}
               <div className="sec1">
                 <div className="photo">
                   <img src={img8} alt="" />
@@ -276,13 +291,13 @@ const Home = () => {
                   <p className='redP '>Treasure Box</p>
                   <p className='redP1 '>Adventure - Free</p>
                 </div>
-              </div>
+              </div></Link>
               <div className="sec2">
                 <p className='paragraph'>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
               </div>
               <div className="sec3">
-                <img className='AppGoogle' src={apple} alt="" />
-                <img className='AppGoogle' src={Google} alt="" />
+              <Link to={appLink} target="_blank"><img className='AppGoogle' src={apple} alt="" /></Link>
+                <Link to={GLink} target="_blank"><img className='AppGoogle' src={Google} alt="" /></Link>
               </div>
             </div>
 
@@ -298,7 +313,8 @@ const Home = () => {
           <div className="r0 r1">
             <h3 className={`redP Mar ${div8InView ? 'ff' : ''}`} ref={div8Ref}> Join Our Team</h3>
             <h1 className={`head Mar ${div9InView ? 'ff' : ''}`} ref={div9Ref}>It takes the world's best talent to change the game.</h1>
-            <button className={`Mar ${div0InView ? 'ff' : ''}`} ref={div0Ref}>Explore Careers</button>
+            <Link to="/Careers" onClick={top}><button className={`Mar ${div0InView ? 'ff' : ''}`} ref={div0Ref}>Explore Careers</button></Link>
+            {/* <Link to="/Careers" ><button className={`Mar ${div0InView ? 'ff' : ''}`} ref={div0Ref}>Explore Careers</button></Link> */}
           </div>
           <div className="r1 r2">
             <img src={img11} className={` ${div14InView ? 'fadeInUpp' : ''}`} ref={div14Ref} alt="" />

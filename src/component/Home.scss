@@ -149,7 +149,7 @@
         padding: 0px 0px 0px 75px;
     }
 
-    >div>img {
+    >div>a>img {
         padding: 30px 20px 0px 0px;
     }
 }
@@ -184,6 +184,9 @@
         margin: 10px 20px;
         cursor: pointer;
         transition: all 2s ease 2s;
+        >a{
+            text-decoration: none;
+        }
     }
 }
 
@@ -304,7 +307,7 @@
         opacity: 0;
     }
 
-    >button {
+    >a>button {
         padding: 17px 27px;
         margin: 20px 0px;
         font-size: 16px;
@@ -412,6 +415,9 @@
     border-radius: 20px;
     box-shadow: 7.07px 7.07px 10px 0px rgba(218, 57, 43, 0.2);
     opacity: 0;
+    >a{
+        text-decoration: none;
+    }
 }
 
 .sec1 {
@@ -502,7 +508,7 @@
         opacity: 0;
     }
 
-    >button {
+    >a>button {
         color: rgb(39, 36, 67);
         margin-left: 50px;
         padding: 24px 20px;

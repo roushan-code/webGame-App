@@ -2,7 +2,14 @@ import React, { useState, useEffect } from 'react'
 import './Header.scss'
 import { Link } from 'react-router-dom'
 import down from './image/down-arrow.png'
+import './Home'
 
+function contact(){
+  const connect = document.getElementById("Contact");
+  connect.scrollIntoView({behavior: 'smooth'})
+}
+
+const top = ()=>window.screenTop();
 
 const Header = () => {
   
@@ -61,7 +68,8 @@ const Header = () => {
       <div className='n2 diiv'>
         <div>
           <nav className='nav2 navv2' id=''>
-            <Link to="/"  ><p className="paragraph">Home</p></Link>
+            <Link to="/" onClick={top} ><p className="paragraph">Home</p></Link>
+            {/* <Link to="/"  ><p className="paragraph">Home</p></Link> */}
             <Link onClick={scrollsss} >
               <p className="paragraph">Games</p>
               <div className="game-tabs">
@@ -72,7 +80,7 @@ const Header = () => {
             </Link>
             <Link to="/Careers" onClick={scrollsss}><p className="paragraph">Careers</p></Link>
             <Link to="/About" onClick={scrollsss}><p className="paragraph">About</p></Link>
-            <a href="/#Contact" ><p className="paragraph">Contact</p></a>
+            <a href="/#Contact" onClick={contact} ><p className="paragraph">Contact</p></a>
             {/* <select name="" id="">
               <option value="">Kipon</option>
               <option value="">Robotrix</option>
@@ -100,7 +108,7 @@ const Header = () => {
           setPrevScrollPos(0);
           window.scrollY=0;
         }}><p className="paragraph">About</p></Link>
-        <Link to="/Contact"><p className="paragraph">Contact</p></Link>
+        <Link to="/Contact" onClick={contact}><p className="paragraph">Contact</p></Link>
       </div>
     </div>
   )
