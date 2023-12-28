@@ -9,7 +9,6 @@ function contact(){
   connect.scrollIntoView({behavior: 'smooth'})
 }
 
-const top = ()=>window.screenTop();
 
 const Header = () => {
   
@@ -34,6 +33,12 @@ const Header = () => {
 
   const [showNavbar, setShowNavbar] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [navLink, setnavLink] = useState(false);
+
+  const Tlink = () =>{
+    setnavLink(!navLink);
+  }
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,11 +55,8 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [prevScrollPos]);
+  }, [prevScrollPos, navLink]);
 
-  const scrollsss = () =>{
-    window.screenTop();
-  }
 
   return (
     <div className={`navbar  diiv ${showNavbar ? 'show nn1' : ''}`}>
@@ -68,24 +70,19 @@ const Header = () => {
       <div className='n2 diiv'>
         <div>
           <nav className='nav2 navv2' id=''>
-            <Link to="/" onClick={top} ><p className="paragraph">Home</p></Link>
-            {/* <Link to="/"  ><p className="paragraph">Home</p></Link> */}
-            <Link onClick={scrollsss} >
+            <Link to="/"   ><p className={`paragraph ${(window.location.pathname === '/') ? 'bg1': ''}`} onClick={Tlink}>Home</p></Link>
+            <Link  >
               <p className="paragraph">Games</p>
               <div className="game-tabs">
-                <Link to="/Kipon" onClick={()=>window.screenTop()} className='game-para'><p className="paragraph">Kipon</p></Link>
-                <Link to="/Robotrix" onClick={()=>window.screenTop()} className='game-para'><p className="paragraph">Robotrix</p></Link>
-                <Link to="/Treasurebox" onClick={()=>window.screenTop()} className='game-para'><p className="paragraph">Treasure Box</p></Link>
+                <Link to="/Kipon"  className='game-para'><p className={`paragraph ${(window.location.pathname === '/Kipon') ? 'bg2' : ''}`} onClick={Tlink}>Kipon</p></Link>
+                <Link to="/Robotrix"  className='game-para'><p className={`paragraph ${(window.location.pathname === '/Robotrix') ? 'bg2' : ''}` } onClick={Tlink}>Robotrix</p></Link>
+                <Link to="/Treasurebox"  className='game-para'><p className={`paragraph ${(window.location.pathname === '/Treasurebox') ? 'bg2' : ''}`} onClick={Tlink}>Treasure Box</p></Link>
               </div>
             </Link>
-            <Link to="/Careers" onClick={scrollsss}><p className="paragraph">Careers</p></Link>
-            <Link to="/About" onClick={scrollsss}><p className="paragraph">About</p></Link>
+            <Link to="/Careers" ><p className={`paragraph ${(window.location.pathname === '/Careers') ? 'bg': ''}`} onClick={Tlink}>Careers</p></Link>
+            <Link to="/About" ><p className={`paragraph ${(window.location.pathname === '/About') ? 'bg': ''}`} onClick={Tlink}>About</p></Link>
             <a href="/#Contact" onClick={contact} ><p className="paragraph">Contact</p></a>
-            {/* <select name="" id="">
-              <option value="">Kipon</option>
-              <option value="">Robotrix</option>
-              <option value="">Treasure Box</option>
-            </select> */}
+            
           </nav>
         </div>
       </div>
@@ -95,19 +92,19 @@ const Header = () => {
         <div className={`line ${menuOpen ? 'l3' : ''}`}></div>
       </div>
       <div className={`sidebar ${menuOpen ? 'visiblebar' : ''}`}>
-        <Link to="/"><p className="paragraph">Home</p></Link>
+        <Link to="/"><p className={`paragraph ${(window.location.pathname === '/') ? 'bg1': ''}`} onClick={Tlink}>Home</p></Link>
         <Link ><p className="paragraph p-img">Game  <img src={down} alt="" className='down-arrow' /></p>
             <div className="linkone">
-              <Link to="/Kipon" className='droplink'><p className='paragraph'>Kipon</p></Link>
-              <Link to="/Robotrix" className='droplink'><p className='paragraph'>Robotrix</p></Link>
-              <Link to="/Treasurebox" className='droplink'><p className='paragraph'>Treasure Box</p></Link>
+              <Link to="/Kipon" className='droplink'><p className={`paragraph ${(window.location.pathname === '/Kipon') ? 'bg2' : ''}`} onClick={Tlink}>Kipon</p></Link>
+              <Link to="/Robotrix" className='droplink'><p className={`paragraph ${(window.location.pathname === '/Robotrix') ? 'bg2' : ''}` } onClick={Tlink}>Robotrix</p></Link>
+              <Link to="/Treasurebox" className='droplink'><p className={`paragraph ${(window.location.pathname === '/Treasurebox') ? 'bg2' : ''}`} onClick={Tlink}>Treasure Box</p></Link>
             </div>
         </Link>
-        <Link to="/Careers"><p className="paragraph">Careers</p></Link>
+        <Link to="/Careers"><p className={`paragraph ${(window.location.pathname === '/Careers') ? 'bg': ''}`} onClick={Tlink}>Careers</p></Link>
         <Link to="/About" onClick={()=> {
           setPrevScrollPos(0);
           window.scrollY=0;
-        }}><p className="paragraph">About</p></Link>
+        }}><p className={`paragraph ${(window.location.pathname === '/About') ? 'bg': ''}`} onClick={Tlink}>About</p></Link>
         <Link to="/Contact" onClick={contact}><p className="paragraph">Contact</p></Link>
       </div>
     </div>

@@ -20,7 +20,6 @@ const twitter = "https://x.com/Roushan22896940?t=VF9oLnlChc0HNwEkes8oKQ&s=08 "
 const linkedin = "https://www.linkedin.com/in/roushan-singh-645819236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 
 
-const top = ()=>window.screenTop();
 
 const Footer = () => {
     function ourgame(){
@@ -37,8 +36,7 @@ const Footer = () => {
                 <div className='n1 n1n'>
                     <div >
                         <nav className='nav1 navfoot'>
-                            <Link to="/" onClick={top}>Tripo Games</Link>
-                            {/* <Link to="/" >Tripo Games</Link> */}
+                            <Link to="/" >Tripo Games</Link>
                         </nav>
                     </div>
                 </div>
@@ -58,10 +56,8 @@ const Footer = () => {
                         <div className="box4">
                             <h3 className="redP" >Navigation</h3>
                             <Link to="/#ourGame" onClick={ourgame} >Games</Link>
-                            <Link to="/Careers" onClick={top}>Carrers</Link>
-                            <Link to="/About" onClick={top}>About</Link>
-                            {/* <Link to="/Careers" >Carrers</Link>
-                            <Link to="/About" >About</Link> */}
+                            <Link to="/Careers" >Carrers</Link>
+                            <Link to="/About" >About</Link>
                             <Link to="/#Contact" onClick={contact} >Contact</Link>
                             <Link to="/" >Privacy Policy</Link>
                             <Link to="/" >Terms & Conditions</Link></div>

@@ -8,7 +8,6 @@ import founder4 from './image/founder4.webp'
 import aboutBilli from './image/abbilli.webp'
 import { Link } from 'react-router-dom'
 
-const top = ()=>window.screenTop();
 
 const About = () => {
     const [div1Ref, div1InView] = useInView({
@@ -136,8 +135,7 @@ const About = () => {
                             <img src={aboutBilli} alt="" />
                             <h3 className='abh3'>We’d Love to Work With You</h3>
                             <p className='paragraph'>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
-                            <Link to="/Careers" onClick={top}><button className='paragraph'>Explore Opportunities</button></Link>
-                            {/* <Link to="/Careers" ><button className='paragraph'>Explore Opportunities</button></Link> */}
+                            <Link to="/Careers" ><button className='paragraph'>Explore Opportunities</button></Link>
                         </div>
                     </div>
                 </div>

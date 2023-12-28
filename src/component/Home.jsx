@@ -150,7 +150,11 @@ const Home = () => {
   //   setInputValue4(e.target.value);
   // };
 
-  const top = ()=> window.screenTop();
+
+  function ourgame(){
+    const game = document.getElementById("ourGame");
+    game.scrollIntoView({behavior: 'smooth'})
+}
 
   return (
     <>
@@ -169,24 +173,21 @@ const Home = () => {
       <section className='section2'>
         <div className='secondSection'>
           <div>
-            <Link to="/Kipon" onClick={top}><img id='IMG' src={img1} alt="" /></Link>
-            {/* <Link to="/Kipon" ><img id='IMG' src={img1} alt="" /></Link> */}
+            <Link to="/Kipon" ><img id='IMG' src={img1} alt="" /></Link>
             <div className="imgRed">
               <p className='redP animationP'>Kipon</p>
               <p className='redP1 animationP'>Causal - Free</p>
             </div>
           </div>
           <div>
-            <Link to="/Robotrix" onClick={top}><img id='IMG' src={img2} alt="" /></Link>
-            {/* <Link to="/Robotrix" ><img id='IMG' src={img2} alt="" /></Link> */}
+            <Link to="/Robotrix" ><img id='IMG' src={img2} alt="" /></Link>
             <div className="imgRed">
               <p className='redP animationP'>Robotrix</p>
               <p className='redP1 animationP'>RPG - Free</p>
             </div>
           </div>
           <div>
-            <Link to="/Treasurebox" onClick={top}><img id='IMG' src={img3} alt="" /></Link>
-            {/* <Link to="/Treasurebox" ><img id='IMG' src={img3} alt="" /></Link> */}
+            <Link to="/Treasurebox" ><img id='IMG' src={img3} alt="" /></Link>
             <div className="imgRed">
               <p className='redP animationP'>Treasure Box</p>
               <p className='redP1 animationP'>Adventure - Free</p>
@@ -194,8 +195,8 @@ const Home = () => {
           </div>
 
           <div>
-            <a href="/#ourGame">
-            <div className='explore'>
+            
+            <div className='explore' onClick={ourgame}>
               <p>Explore Our</p>
               <p>Games</p>
               <p>↓</p>
@@ -203,7 +204,7 @@ const Home = () => {
 
               </div>
             </div>
-            </a>
+            
           </div>
         </div>
       </section>
@@ -233,8 +234,7 @@ const Home = () => {
           <div className="box1">
 
             <div className={`boxi ${div10InView ? 'fadeInLeft' : ''}`} ref={div10Ref}>
-              <Link to="/Kipon" onClick={top}><div className="sec1">
-              {/* <Link to="/Kipon" ><div className="sec1"> */}
+              <Link to="/Kipon" ><div className="sec1">
                 <div className="photo">
                   <img src={img6} alt="" />
                 </div>
@@ -256,8 +256,7 @@ const Home = () => {
           <div className="box1">
 
             <div className={`boxi ${div11InView ? 'fadeInLeft' : ''}`} ref={div11Ref}>
-              <Link to="/Robotrix" onClick={top}><div className="sec1">
-              {/* <Link to="/Robotrix" ><div className="sec1"> */}
+              <Link to="/Robotrix" ><div className="sec1">
                 <div className="photo">
                   <img src={img7} alt="" />
                 </div>
@@ -281,8 +280,7 @@ const Home = () => {
           <div className="box1">
 
             <div className={`boxi ${div12InView ? 'fadeInLeft' : ''}`} ref={div12Ref}>
-              <Link to="/Treasurebox" onClick={top}>
-              {/* <Link to="/Treasurebox" > */}
+              <Link to="/Treasurebox" >
               <div className="sec1">
                 <div className="photo">
                   <img src={img8} alt="" />
@@ -313,8 +311,7 @@ const Home = () => {
           <div className="r0 r1">
             <h3 className={`redP Mar ${div8InView ? 'ff' : ''}`} ref={div8Ref}> Join Our Team</h3>
             <h1 className={`head Mar ${div9InView ? 'ff' : ''}`} ref={div9Ref}>It takes the world's best talent to change the game.</h1>
-            <Link to="/Careers" onClick={top}><button className={`Mar ${div0InView ? 'ff' : ''}`} ref={div0Ref}>Explore Careers</button></Link>
-            {/* <Link to="/Careers" ><button className={`Mar ${div0InView ? 'ff' : ''}`} ref={div0Ref}>Explore Careers</button></Link> */}
+            <Link to="/Careers" ><button className={`Mar ${div0InView ? 'ff' : ''}`} ref={div0Ref}>Explore Careers</button></Link>
           </div>
           <div className="r1 r2">
             <img src={img11} className={` ${div14InView ? 'fadeInUpp' : ''}`} ref={div14Ref} alt="" />

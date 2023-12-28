@@ -9,6 +9,7 @@ import Header from './component/Header';
 import Footer from './component/Footer';
 import Careers from './component/Careers';
 import About from './component/About.jsx';
+import ScrollToTop from './component/ScrollToTop';
 
 
 
@@ -16,6 +17,7 @@ function App() {
   
   return (
     <Router>
+      <ScrollToTop/>
       <Header/>
       
       <Routes>
