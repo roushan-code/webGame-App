@@ -23,6 +23,12 @@
     }
 }
 
+@media only screen and (max-width:850px) {
+    .scrollBox{
+        background: url(image/homeBG.webp) no-repeat 70% 0%;
+        left: -150px;
+     }
+}
 @media only screen and (max-width:822px) {
     .fadeInLeft {
         animation: fadeInUp 1s ease-out;
@@ -144,9 +150,10 @@
 }
 
 @media only screen and (max-width:500px) {
-    .scrollBox{
-        background: url(image/homeBG.webp) no-repeat 80% 0%;
-     }
+    .scrollBox {
+        background: url(http://localhost:3000/static/media/homeBG.222c161….webp) no-repeat 80% 0%;
+        left: -90px;
+    }
     .Input {
         width: 93%;
     }
