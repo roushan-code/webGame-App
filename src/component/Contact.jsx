@@ -53,22 +53,22 @@ const Contact = () => {
               <form onSubmit={handleSubmit} >
                 <div className='namediv widthHeight'>
                   <div>
-                    <label className='paragraph' for="fname">First Name *</label> <br />
+                    <label className='paragraph' htmlFor="fname">First Name *</label> <br />
                     <input type="text" name="Fname" onChange={handleInputChange} value={inputValue} id="fname" className='Input In1' />
                   </div>
                   <div>
-                    <label className='paragraph' for="lname">Last Name *</label> <br />
+                    <label className='paragraph' htmlFor="lname">Last Name *</label> <br />
                     <input type="text" name="Lname" onChange={handleInputChange1} value={inputValue1} id="lname" className='Input In1' />
                   </div>
 
                 </div>
                 <div className='mailDiv widthHeight'>
-                  <label className='paragraph' for="email">Email *</label> <br />
+                  <label className='paragraph' htmlFor="email">Email *</label> <br />
                   <input type="email" name="Email" onChange={handleInputChange2} value={inputValue2} id="email" className='Input In2' />
                 </div>
 
                 <div className='mailDiv widthHeight message'>
-                  <label className='paragraph' for="comment">Leave us a message...</label> <br />
+                  <label className='paragraph' htmlFor="comment">Leave us a message...</label> <br />
                   <textarea name="myText" onChange={handleInputChange3} value={inputValue3} id="comment" cols="30" rows="7"></textarea>
                 </div>
 
@@ -82,7 +82,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit1}>
                 <div >
                   <div className='mailDiv widthHeight subsDiv'>
-                    <label className='paragraph' for="email">Email *</label>
+                    <label className='paragraph' htmlFor="email">Email *</label>
                     <input type="email" name="Email" onChange={handleInputChange4} value={inputValue4} id="email" className='Input subscribeInput In1' />
                   </div>
                   <button className='BBton' type="submit">Join</button>
