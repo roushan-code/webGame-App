@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# Tripo Games - Web Gaming Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive web application showcasing various mobile games with multiple interactive views including Home, Games, Careers, About, and Contact pages.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Navigation
+- Responsive header with dynamic navigation
+- Dropdown menu for games section
+- Smooth scrolling functionality
+- Mobile-friendly hamburger menu
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Home Page**
+  - Featured games showcase
+  - Company overview
+  - Game download links
+  - Newsletter subscription
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Careers Page**
+  - Job listings
+  - Application form
+  - Office locations
+  - Company culture
 
-### `npm test`
+- **About Page**
+  - Company history
+  - Team members
+  - Mission statement
+  - Office locations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Contact Page**
+  - Contact form
+  - Newsletter subscription
+  - Office address
+  - Social media links
 
-### `npm run build`
+### Game Pages
+- **Kipon** (Casual Game)
+  - Game overview
+  - Screenshots
+  - User reviews
+  - Download links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Robotrix** (RPG Game)
+  - Game features
+  - Screenshots
+  - User reviews
+  - Download links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Treasure Box** (Adventure Game)
+  - Game description
+  - Screenshots
+  - User reviews
+  - Download links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React.js
+- React Router DOM
+- GSAP (GreenSock Animation Platform)
+- React Intersection Observer
+- SCSS for styling
+- React Icons
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
+```bash
+cd webGame-App
+npm install
+```
 
-## Learn More
+3. Run the development server:
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+  ├── component/
+  │   ├── About.jsx
+  │   ├── Careers.jsx
+  │   ├── Contact.jsx
+  │   ├── Footer.jsx
+  │   ├── Header.jsx
+  │   ├── Home.jsx
+  │   ├── Kipon.jsx
+  │   ├── Robotrix.jsx
+  │   ├── Treasurebox.jsx
+  │   └── image/
+  ├── App.js
+  ├── App.scss
+  └── index.js
+```
 
-### Code Splitting
+## Features to be Added
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- User authentication
+- Game download tracking
+- User reviews system
+- Job application system
+- Newsletter functionality
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Advanced Configuration
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Developer Name - [Roushan Singh](https://www.linkedin.com/in/roushan-singh-645819236)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/yourusername/webGame-App](https://github.com/yourusername/webGame-App)
